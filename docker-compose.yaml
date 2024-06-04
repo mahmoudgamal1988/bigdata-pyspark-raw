@@ -83,8 +83,6 @@ services:
     user: root
     depends_on:
       - namenode
-      - resourcemanager
-      - nodemanager
     environment:
       - SPARK_MODE=master
       - SPARK_WORKER_MEMORY=1G
